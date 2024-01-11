@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    outline: none;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #020303;
+    font-family: Arial, serif;
+}
+
+/*   <header class="header">...</header>   */
+
+.header {
+    /*border: 1px dashed brown;*/
+    padding: 30px 0;
+}
+
+.container {
+    /*border: 1px dotted saddlebrown;*/
+    font-size: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo {
+    display: inline-block;
+    width: 125px;
+    vertical-align: middle;
+}
+
+.logo:hover {
+    opacity: .5;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menu {
+    display: inline-block;
+    margin-left: 281px;
+    vertical-align: middle;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    font-size: 16px;
+    padding-bottom: 6px;
+    vertical-align: middle;
+}
+
+.menu ul li:nth-child(2) {
+    margin: 0 60px;
+}
+
+.menu ul li:last-child {
+    margin-left: 54px;
+}
+
+.menu ul li a {
+    color: rgb(253, 239, 213);
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: rgb(255, 175, 24);
+    border-bottom: 2px solid #ffaf18;
+}
+
+/*   <section class="main"> ... </section>   */
+
+.main {
+    padding: 133px 0 100px;
+}
+
+.main-info {
+    display: inline-block;
+    max-width: 564px;
+    vertical-align: top;
+}
+
+.main-img {
+    display: inline-block;
+    margin-left: 22px;
+    padding-top: 42px;
+    vertical-align: bottom;
+    width: 614px;
+}
+
+.main-img img {
+    max-width: 100%;
+}
+
+.main-info h1 {
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: bold;
+    padding-bottom: 37px;
+}
+
+.main-info h1 span {
+    color: #ffaf18;
+}
+
+.main-info-properties {
+    padding: 37px 0 46px;
+    display: flex;
+    align-items: center;
+}
+
+.competition:last-child {
+    margin-left: 100px;
+}
+
+.main-info-properties img, .main-info-properties span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*.main-info-properties img:nth-of-type(2){*/
+/*    margin-left: 100px;*/
+/*}*/
+
+.main-info-properties span {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.main-action {
+    padding-top: 46px;
+}
+
+.btn {
+    background-color: #ffaf18;
+    border-radius: 30px;
+    color: rgb(2, 3, 3);
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    width: 224px;
+}
+
+.btn.btn1 {
+    padding: 22px;
+}
+
+.btn:hover {
+    /*box-shadow: 0 5px 5px #ffa700;*/
+    box-shadow: 0 15px 15px rgba(255, 167, 0, 0.2);
+}
+
+/*   <section class="order"> ... </section>   */
+
+.order {
+    padding: 100px 0 120px;
+}
+
+.order .rolls {
+    /*margin: 0 -12px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 242px);
+    gap: 32px 64px;
+    justify-content: space-between;
+}
+
+.order h2 {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.order .rolls .roll {
+    background-color: white;
+    /*display: inline-block;*/
+    height: 329px;/*354 - 25(паддинги сверху и снизу) = 329px */
+    /*margin: 12px;*/
+    width: 242px; /*282 - 40(паддинги по бокам) = 242px */
+    padding: 10px 20px 15px;
+    position: relative;
+    text-align: center;
+    /*vertical-align: middle;*/
+}
+
+.order .rolls .roll .roll-action {
+    position: absolute;
+    top: 285px;
+}
+
+.order .rolls .roll:first-child, .order .rolls .roll:last-child {
+    border: 5px solid #ed9b00;
+    padding: 5px 15px 10px;
+}
+
+.roll-first-last-action {
+    position: absolute;
+    top: 280px;
+}
+
+.order .roll-title {
+    color: rgb(24, 26, 26);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0 15px;
+}
+
+.order .roll-ingredients {
+    font-size: 14px;
+    color: rgb(24, 26, 26);
+}
+
+.btn.btn2 {
+    box-sizing: border-box;
+    padding: 17px;
+    width: 242px;
+}
+
+/*   <section class="professional"> ... </section>   */
+
+.professional {
+    padding: 120px 0 67px;
+}
+
+.professional .professional-info {
+    display: inline-block;
+    max-width: 384px;
+    vertical-align: top;
+}
+
+.professional .professional-img {
+    display: inline-block;
+    margin-left: 48px;
+    vertical-align: bottom;
+}
+
+.professional-img img {
+    max-width: 100%;
+}
+
+.professional-info h2 {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.professional .professional-txt {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    margin-bottom: 100px;
+}
+
+.professional .professional-txt span {
+    padding: 0 2em;
+}
+
+.professional .professional-about-txt {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.professional-about-imgs .about-img {
+    display: inline-block;
+    margin-left: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.professional-about-imgs .about-img:first-child {
+    margin-left: 0;
+}
+
+.professional-about-imgs .about-img a {
+    background-color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 55px;
+    padding: 13px 7px;
+    text-decoration: none;
+    width: 55px;
+}
+
+.professional-about-imgs .about-img a:hover, .order .rolls .roll:hover {
+    box-shadow: 0 0 6px 6px #727373;
+}
+
+.about-img a:visited {
+    background-color: #bebebe;
+}
+
+.about-img a:active {
+    background-color: #ffaf18;
+}
+
+/*   <footer class="footer"> ... </footer>   */
+
+.footer {
+    padding: 30px 0;
+}
+
+.right {
+    color: rgb(44, 44, 44);
+    display: inline-block;
+    font-size: 12px;
+    /*line-height: 1.2;*/
+    margin-left: 390px;
+    /*vertical-align: middle;*/
+ }
